@@ -7,7 +7,7 @@ Native Javascript framework
 ...
 </div>
 ```
-or call ```sf.init(HtmlElement container)``` of content loaded via ajax
+or call ```sf.init(HtmlElement container)``` on content loaded via ajax
 
 <b>2. Attach model</b>
 ```html
