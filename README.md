@@ -7,8 +7,10 @@ Native Javascript framework
 ...
 </div>
 ```
-or call ```sf.init(HtmlElement container)``` on content loaded via ajax
-
+or call on content loaded via ajax (in case if content contains sf instances)
+```js
+sf.init(HtmlElement container)
+```
 <b>2. Attach model</b>
 ```html
 <script>
