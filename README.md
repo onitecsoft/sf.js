@@ -38,3 +38,14 @@ or
 ...
 </div>
 ```
+<b>3. Set actions</b>
+```html
+<script>
+  var model = { greeting: 'Hello!', name: 'World' };
+</script>
+<div sf="test" sf-load="model">
+  <span sf-src="greeting"></span>
+  <input type="text" sf-set-value="name" />
+</div>
+```
+Full list of actions and possibilites is comming soon....
