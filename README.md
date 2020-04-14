@@ -1,7 +1,7 @@
 # sf.js
 Native Javascript framework
 
-1. Define instance (it initializes at ```DOMContentLoaded``` event)
+<b>1. Define instance</b> (it initializes at ```DOMContentLoaded``` event)
 ```html
 <div sf="myNamespace.myInstance">
 ...
@@ -9,7 +9,7 @@ Native Javascript framework
 ```
 or call ```sf.init(HtmlElement container)``` of content loaded via ajax
 
-2. Attach model
+<b>2. Attach model</b>
 ```html
 <script>
   var model = { name: 'test' };
@@ -29,7 +29,7 @@ or
         //or
         test.load(model);
       }
-    )
+    );
   }
 </script>
 <div sf="test" sf-load="loadModel">
