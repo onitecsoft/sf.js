@@ -1,6 +1,7 @@
 # sf.js
 Native Javascript framework
-Contains <a href="https://github.com/onitecsoft/smarti.data.js">smarti.data.js</a> and <a href="https://github.com/onitecsoft/smarti.to.js">smarti.to.js</a> (user sf.data, sf.to, sf.parse)
+
+Contains <a href="https://github.com/onitecsoft/smarti.data.js">smarti.data.js</a> and <a href="https://github.com/onitecsoft/smarti.to.js">smarti.to.js</a> (use sf.data, sf.to, sf.parse)
 
 <b>1. Define instance</b> (it initializes at ```DOMContentLoaded``` event)
 ```html
