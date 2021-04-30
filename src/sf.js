@@ -13,7 +13,7 @@ var sf = {
 			instances.push(sf.data.set(e.getAttribute('sf'), sf.scope, new sf.sf(e)));
 		});
 		sf.core.loop(instances, function (i) {
-			if (i.preload) i.preload.call(i);
+			if (i.preload) i.preload(i);
 		});
 	},
 	sf: function (container) {
@@ -24,9 +24,6 @@ var sf = {
 		this.load = function (model) {
 			if (arguments.length > 0) that.model = model;
 			that.binder.load(that.container, that.model);
-		}
-		this.unload = function () {
-			that.load(null);
 		}
 		this.validate = function (props) {
 			var m = {};
@@ -117,7 +114,7 @@ var sf = {
 		load: {
 			preload: function (v) {
 				var m = v ? sf.data.get(v, sf.scope) : null;
-				return typeof m === 'function' ? m : function () { this.load(m); };
+				return typeof m === 'function' ? m : function (s) { s.load(m); };
 			}
 		},
 		src: {
